@@ -22,7 +22,7 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
  * Test cases for SignUtils.
@@ -39,17 +39,17 @@ public final class SignUtilsTest {
     @Test
     public void testGeneratesSignWithNullKeyOrNullData() {
 
-        assertThrowsExactly(NullPointerException.class,
+        assertThrows(NullPointerException.class,
             () -> SignUtils.sign(SignUtils.SIGN_HS256, "key", null));
 
-        assertThrowsExactly(NullPointerException.class,
+        assertThrows(NullPointerException.class,
             () -> SignUtils.sign(SignUtils.SIGN_HS256, null, "data"));
     }
 
     @Test
     public void testGeneratesSignWithUnsupportedAlgorithm() {
 
-        assertThrowsExactly(UnsupportedOperationException.class,
+        assertThrows(UnsupportedOperationException.class,
             () -> SignUtils.sign("supported_algorithm", "key", "data"));
     }
 
