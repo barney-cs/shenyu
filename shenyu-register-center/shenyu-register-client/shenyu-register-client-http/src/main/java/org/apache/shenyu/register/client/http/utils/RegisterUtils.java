@@ -100,7 +100,7 @@ public final class RegisterUtils {
         Headers headers = new Headers.Builder().add(Constants.X_ACCESS_TOKEN, accessToken).build();
         String result = OkHttpTools.getInstance().post(url, json, headers);
         if (Objects.equals(SUCCESS, result)) {
-            LOGGER.info("{} success: {} ", type, json);
+            LOGGER.debug("{} success: {} ", type, json);
         } else {
             LOGGER.error("{} error: {} ", type, json);
         }
