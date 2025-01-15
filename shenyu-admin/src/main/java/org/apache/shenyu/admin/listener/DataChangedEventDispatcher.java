@@ -100,7 +100,7 @@ public class DataChangedEventDispatcher implements ApplicationListener<DataChang
                     break;
                 case DISCOVER_UPSTREAM:
                     listener.onDiscoveryUpstreamChanged((List<DiscoverySyncData>) event.getSource(), event.getEventType());
-                    applicationContext.getBean(LoadServiceDocEntry.class).loadDocOnUpstreamChanged((List<DiscoverySyncData>) event.getSource(), event.getEventType());
+//                    applicationContext.getBean(LoadServiceDocEntry.class).loadDocOnUpstreamChanged((List<DiscoverySyncData>) event.getSource(), event.getEventType());
                     break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + event.getGroupKey());

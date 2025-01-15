@@ -17,6 +17,7 @@
 
 package org.apache.shenyu.register.common.dto;
 
+import org.apache.shenyu.common.constant.Constants;
 import org.apache.shenyu.register.common.enums.EventType;
 import org.apache.shenyu.register.common.type.DataType;
 import org.apache.shenyu.register.common.type.DataTypeParent;
@@ -42,7 +43,7 @@ public class URIRegisterDTO implements DataTypeParent {
 
     private EventType eventType;
     
-    private String namespaceId;
+    private String namespaceId = Constants.SYS_DEFAULT_NAMESPACE_ID;
     
     /**
      * Instantiates a new Uri register dto.

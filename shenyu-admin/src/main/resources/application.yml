@@ -68,9 +68,9 @@ shenyu:
       nacosNameSpace: ShenyuRegisterCenter
   sync:
     websocket:
-      enabled: true
-      messageMaxSize: 10240
-      allowOrigins: ws://localhost:9095;ws://localhost:9195;
+      enabled: false
+#      messageMaxSize: 10240
+#      allowOrigins: ws://localhost:9095;ws://localhost:9195;
 #    apollo:
 #      meta: http://localhost:8080
 #      appId: shenyu
@@ -79,10 +79,11 @@ shenyu:
 #      clusterName: test
 #      namespace: application
 #      token: 0fff5645fc74ee5e0d63a6389433c8c8afc0beea31eed0279ecc1c8961d12da9
-#    zookeeper:
-#      url: localhost:2181
-#      sessionTimeout: 5000
-#      connectionTimeout: 2000
+    zookeeper:
+      enabled: true
+      url: 10.7.8.40:2181
+      sessionTimeout: 5000
+      connectionTimeout: 2000
 #    http:
 #      enabled: true
 #    nacos:

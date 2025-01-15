@@ -17,6 +17,7 @@
 
 package org.apache.shenyu.register.common.dto;
 
+import org.apache.shenyu.common.constant.Constants;
 import org.apache.shenyu.register.common.type.DataType;
 import org.apache.shenyu.register.common.type.DataTypeParent;
 
@@ -40,7 +41,7 @@ public class DiscoveryConfigRegisterDTO implements DataTypeParent {
 
     private Properties props;
 
-    private String namespaceId;
+    private String namespaceId = Constants.SYS_DEFAULT_NAMESPACE_ID;
 
     public DiscoveryConfigRegisterDTO() {
     }

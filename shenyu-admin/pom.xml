@@ -297,11 +297,11 @@
         </dependency>
 
         <!-- shenyu discovery start -->
-        <dependency>
-            <groupId>org.apache.shenyu</groupId>
-            <artifactId>shenyu-discovery-etcd</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shenyu</groupId>-->
+<!--            <artifactId>shenyu-discovery-etcd</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.apache.shenyu</groupId>
@@ -315,43 +315,43 @@
             <version>${project.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.shenyu</groupId>
-            <artifactId>shenyu-discovery-eureka</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>jakarta.servlet</groupId>
-                    <artifactId>servlet-api</artifactId>
-                </exclusion>
-            </exclusions>
-            <version>${project.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shenyu</groupId>-->
+<!--            <artifactId>shenyu-discovery-eureka</artifactId>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>jakarta.servlet</groupId>-->
+<!--                    <artifactId>servlet-api</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
         <!-- shenyu discovery end -->
 
         <!-- shenyu-admin-listener start -->
-        <dependency>
-            <groupId>org.apache.shenyu</groupId>
-            <artifactId>shenyu-admin-listener-consul</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shenyu</groupId>-->
+<!--            <artifactId>shenyu-admin-listener-consul</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>org.apache.shenyu</groupId>
-            <artifactId>shenyu-admin-listener-etcd</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shenyu</groupId>-->
+<!--            <artifactId>shenyu-admin-listener-etcd</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>org.apache.shenyu</groupId>
-            <artifactId>shenyu-admin-listener-nacos</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shenyu</groupId>-->
+<!--            <artifactId>shenyu-admin-listener-nacos</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>org.apache.shenyu</groupId>
-            <artifactId>shenyu-admin-listener-polaris</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shenyu</groupId>-->
+<!--            <artifactId>shenyu-admin-listener-polaris</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.apache.shenyu</groupId>

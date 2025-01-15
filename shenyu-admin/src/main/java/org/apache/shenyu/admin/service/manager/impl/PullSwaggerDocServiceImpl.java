@@ -72,7 +72,7 @@ public class PullSwaggerDocServiceImpl implements PullSwaggerDocService {
 
     @Override
     public void pullApiDocument(final Set<UpstreamInstance> currentServices) {
-        currentServices.forEach(this::pullApiDocument);
+//        currentServices.forEach(this::pullApiDocument);
     }
 
     /**
