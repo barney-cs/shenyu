@@ -36,7 +36,7 @@ import java.util.Objects;
 /**
  * email alert notice.
  */
-@Component
+//@Component
 final class EmailAlertNotifyStrategy implements AlertNotifyHandler {
     
     private final JavaMailSender javaMailSender;

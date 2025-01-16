@@ -80,7 +80,7 @@ management:
           - 'health'
           - 'info'
 shenyu:
-  namespace: 649330b6-c2d7-4edc-be8e-8a54df9eb385
+  namespace: daee4af8-d422-44fb-a46f-f477ee3ad07b
   selectorMatchCache:
     ## selector L1 cache
     cache:
@@ -238,7 +238,7 @@ shenyu:
 #      clusterName: test
 #      namespace: application
     zookeeper:
-      url: localhost:2181
+      url: 10.6.12.205:2181
       sessionTimeout: 5000
       connectionTimeout: 2000
 #    http:
